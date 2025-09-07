@@ -1,0 +1,7 @@
+cd cnn-news-summarizer
+git init
+git add .
+git commit -m "Initial commit: cnn-summarizer with Hugging Face model"
+git branch -M main
+git remote add origin https://github.com/chandra1024448/cnn-news-summarizer.git
+git push -u origin main
