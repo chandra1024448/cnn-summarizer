@@ -30,7 +30,7 @@ A Gradio web app to summarize news articles in English or Hindi using my trained
 
 **Using the Hugging Face Spaces API**
 
-* Endpoint: [https://chandra1024-cnn-summarizer.hf.space/api/predict/]
+* Endpoint: [https://chandra1024-cnn-summarizer.hf.space/]
 * Input: JSON object with 'data' field containing:
    1. text – The news article (minimum 5 lines)
    2. lang – 'English' or 'Hindi'
@@ -49,7 +49,7 @@ Example Input:
 * Python Example:
 import requests
 
-url = 'https://chandra1024.hf.space/api/predict/'
+url = 'https://chandra1024-cnn-summarizer.hf.space/'
 data = {'data': ['Hurricane Fiona swept through Puerto Rico...', 'Hindi', 'Medium']}
 response = requests.post(url, json=data)
 summary = response.json()['data'][0]
