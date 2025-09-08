@@ -35,6 +35,8 @@ Link - https://chandra1024-cnn-summarizer.hf.space
 -----------------------------------------------------------------------------------------------------------
 
 **Technical Details**
+
+
 	•	Built with PyTorch and Hugging Face Transformers
 	•	Optional Helsinki NLP model for English → Hindi translation
 	•	Handles large articles by chunking input text
