@@ -28,32 +28,17 @@ A Gradio web app to summarize news articles in English or Hindi using my trained
 
 ---------------------------------------------------------------------------------------------------------
 
-**Using the Hugging Face Spaces API**
+**Demo/ Try it yourself**
 
-* Endpoint: https://huggingface.co/spaces/chandra1024/cnn-summarizer/run/predict
-* Input: JSON object with 'data' field containing:
-   1. text – The news article (minimum 5 lines)
-   2. lang – 'English' or 'Hindi'
-   3. length_choice – 'Short', 'Medium', or 'Detailed'
- 
-Example Input:
+Link - https://chandra1024-cnn-summarizer.hf.space
 
-   {
-     'data': ['Hurricane Fiona swept through Puerto Rico...', 'Hindi', 'Medium']
-   }
-* Output Example:
-   {
-     'data': ['हुरिकेन फियोना ने पोर्टो रिको में रविवार को तूफान की तरह तबाही मचाई...']
-   }
-  
-* Python Example:
-import requests
+-----------------------------------------------------------------------------------------------------------
 
-url = 'https://chandra1024-cnn-summarizer.hf.space/'
-data = {'data': ['Hurricane Fiona swept through Puerto Rico...', 'Hindi', 'Medium']}
-response = requests.post(url, json=data)
-summary = response.json()['data'][0]
-print(summary)
+**Technical Details**
+	•	Built with PyTorch and Hugging Face Transformers
+	•	Optional Helsinki NLP model for English → Hindi translation
+	•	Handles large articles by chunking input text
+	•	Proper nouns are extracted and restored to avoid translation errors
 
 -----------------------------------------------------------------------------------------------------------
 
