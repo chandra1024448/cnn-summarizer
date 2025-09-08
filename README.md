@@ -18,7 +18,7 @@ A Gradio web app to summarize news articles in English or Hindi using my trained
 **Getting Started (Local Setup)**
 
 * Clone the repository:
-   git clone https://github.com/chandra1024448/cnn-news-summarizer.git
+   git clone https://github.com/chandra1024448/cnn-summarizer.git
    cd cnn-news-summarizer
 * Install dependencies:
    pip install -r requirements.txt
